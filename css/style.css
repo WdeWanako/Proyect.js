@@ -108,6 +108,50 @@ nav ul li{
 
 /*-------------------------BODY---------------------------*/
 
+.container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content{
+    max-width: 450px;
+    padding: 50px 60px 50px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.form-content h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+
+}
+
+.form-content input{
+    margin: 15px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-login{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.btn-login:hover{
+    background: #009688;
+    color: #fff;
+}
+
 .titulo-body{
   text-align: center;
   font-size: 50px;
