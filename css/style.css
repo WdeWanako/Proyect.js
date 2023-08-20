@@ -108,48 +108,49 @@ nav ul li{
 
 /*-------------------------BODY---------------------------*/
 
-.container{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+form{
+    width: 350px;
+    height: 400px;
+    background-color: #5F9EA0;
+    padding: 20px;
+    margin: 50px auto;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -10px 20px 15px 10px gray;
 }
 
-.form-content{
-    max-width: 450px;
-    padding: 50px 60px 50px;
+form h3{
+    color: #fff;
     text-align: center;
-    border-radius: 25px;
-}
-
-.form-content h3{
-    font-size: 30px;
+    margin-top: 20px;
     margin-bottom: 30px;
+}
+
+form input{
+    font-size: 16px;
+    padding: 8px;
+    display: flex;
+    margin: 10px auto;
+}
+
+form label{
     color: #fff;
-
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin: 15px auto;
 }
 
-.form-content input{
-    margin: 15px 0;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-}
-
-.btn-login{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-    padding: 10px 0;
+form button{
+    width: 100px;
+    margin-top: 20px;
+    font-size: 15px;
+    display: block;
     cursor: pointer;
-    transition: background 1s;
 }
 
-.btn-login:hover{
-    background: #009688;
-    color: #fff;
+form button:hover{
+    background-color:#009688 ;
 }
 
 .titulo-body{
