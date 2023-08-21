@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saca tu Turno</title>
-</head>
+    <head>
+        <title>Saca tu turno</title>
+        <!-- CSS link -->
+        <link rel="stylesheet" href="/css/style.css" />
+        <!-- Font Link -->
+        <link
+          href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap"
+          rel="stylesheet"
+        />
+        <!-- Meta Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <meta name="keywords" content="El Colo Barber Shop" />
+        <meta name="description" content="El Colo Barber Shop" />
+      </head>
 <body>
     
     <h1>Saca tu turno</h1>
+        <div class="form-servicio"></div>
+            <select name="category" id="elegir-servicio">
+                <option value="Elegi un servicio">Elegi un servicio</option> 
+                <option value="Corte">Corte</option>
+                <option value="Corte + Barba">Corte + Barba</option>
+                <option value="Barba">Barba</option>
+                <option value="Corte + Barba + Cejas">Corte + Barba + Cejas</option>
+                <option value="Corte + Cejas">Corte + Cejas</option>
+            </select>
 
+            <input type="date" name="date" required class="input_date">
+
+            <textarea name="message" placeholder="Escribi tu mensaje" class="textarea" cols="30" rows="10"></textarea>
+        
+            <input type="submit" value="Enviar" class="submit">
+        </div>
 </body>
 </html>

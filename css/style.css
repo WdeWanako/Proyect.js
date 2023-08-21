@@ -54,6 +54,7 @@ Header Section
     padding: 12px 0;
     border: .5px solid #fff;
     position:relative ;
+    transition: 0.5s;
 }
 
 .boton-banner a span{
@@ -63,16 +64,13 @@ Header Section
     top: 0;
     left: 0;
     background: #fff;
-
+    transition: 0.5s;
 }
 
 .boton-banner a:hover{
     background: #fff;
     color: #5F9EA0;
 }
-
-
-
 
 #sideNav{
     width: 250px;
@@ -92,6 +90,7 @@ nav ul li{
     text-decoration: none;
     color: #fff;
 }
+
 #menuBtn{
     width: 50px;
     height: 50px;
@@ -192,59 +191,107 @@ p{
     font-style: italic;
 }
 
-/* Grid */
-.grid-item {
-    position: relative;
-    display: inline-block;
-  }
-  .grid-item .btn-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-  .grid-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    padding: 5px;
-    transition: all 0.5s ease-in-out;
-  }
-  .grid-item:hover img {
-    transform: scale(1.05);
-  }
-  .grid-item .img-title {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    color: white;
-    font-size: 16px;
-    padding: 15px 0;
+/*----------GRID - Articulos-------------*/
+.servicios-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.servicios-imagenes{
+    flex-basis: 48%;
     text-align: center;
-    opacity: 0;
-    transition: height 0.3s, opacity 0.3s;
-  }
-  .grid-item:hover .img-title {
-    height: 100%;
-    color: aliceblue;
-    opacity: 1;
-  }
-
-  /* Media Querie Grid Index */
-  .grid-item {
+    border-radius: 7px;
     margin-bottom: 20px;
-  }
-  .grid-item img {
+    color: #fff;
+    position: relative;
+}
+.servicios-imagenes img{
     width: 100%;
-    height: auto;
-    display: block;
-    padding: 5px;
-  }
-  footer .row {
-    flex-direction: column;
-  }
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    opacity: 0;
+    transition: 1s;
+}
+.servicios-imagenes:hover .overlay{
+    opacity: 1;
+}
+.texto-overlay{
+    width: 80%;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
 
+.servicios-imagenes:hover .texto-overlay{
+    bottom: 40%;
+    opacity: 1;
+}
+
+/* Media Querie Servicios */
+@media screen and (max-width: 770px){
+    .servicios-imagenes{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .servicios-imagenes:hover .texto-overlay{
+        bottom: 25%;
+    }
+}
+
+  /*====================
+Turnos.html
+====================*/
+
+  /* Estilo para el contenedor del formulario */
+  .form-servicio{
+    background-color: #555;
+  }
+  /* Estilos para el select */
+  #elegir-servicio {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    font-size: 16px;
+    
+  }
+  
+  /* Estilos para el input de fecha */
+  .input_date {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    font-size: 16px;
+  }
+  
+  /* Estilos para el textarea */
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    resize: vertical;
+    margin-bottom: 15px;
+  }
+  
+  
