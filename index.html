@@ -3,13 +3,23 @@
   <html>
     <head>
       <title>El Colo Barber Shop</title>
-      <link rel="stylesheet" href="/css/style.css"/>
-      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+      <!-- CSS link -->
+      <link rel="stylesheet" href="/css/style.css" />
+      <!-- Font Link -->
+      <link
+        href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap"
+        rel="stylesheet"
+      />
+      <!-- Meta Tags -->
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta charset="utf-8" />
+      <meta name="keywords" content="El Colo Barber Shop" />
+      <meta name="description" content="El Colo Barber Shop" />
     </head>
-    
-    
-    <header>
+
+    <!-- Header -->
+    <header class="header">
+      
       <section id="banner">
         <img src="https://i.ibb.co/PwP7dxq/logo.png" class="logo" />
         <h1 class="titulo">"Barberia El Colo"</h1>
@@ -22,87 +32,152 @@
       </section>
       <div id="sideNav">
         <nav>
-            <ul>
-                <li><a href="#banner">HOME</a></li>
-                <li><a href="#feature">FEATURES</a></li>
-                <li><a href="#service">SERVICES</a></li>
-                <li><a href="#testimonial">TESTIMONIALS</a></li>
-                <li><a href="#footer">MEET US</a></li>
-            </ul>
+          <ul>
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#feature">FEATURES</a></li>
+            <li><a href="#service">SERVICES</a></li>
+            <li><a href="#testimonial">TESTIMONIALS</a></li>
+            <li><a href="#footer">MEET US</a></li>
+          </ul>
         </nav>
-    </div>
-    <div id="menuBtn">
-        <img src="https://i.ibb.co/B2WTpLC/menu.png" id="menu">
-    </div>
+      </div>
+      <div id="menuBtn">
+        <img src="https://i.ibb.co/B2WTpLC/menu.png" id="menu" />
+      </div>
     </header>
-    
-    
-    <body>
-        <section id="clientes">
-            <div class="titulo-body">
-                <h2>Ingresa tus datos para sacar tu turno</h2>
-            </div>
-          
-            <form action="" id="form">
-              <h3>Registro</h3>
-                
-                <div class="grupo">
-                  <label for="">Nombre</label>
-                  <input type="text" name="" id="name">
-                </div>
-                    
-                <div class="grupo">
-                  <label for="">Edad</label>
-                  <input type="text" name="" id="edad">
-                </div>
-                    
-                <div class="grupo">
-                  <label for="">Email</label>
-                  <input type="text" name="" id="email">
-                </div>
-                    
-                <div class="btn-login">
-                  <button id="signIn" type="button" onclick="login()">Pedir Turno</button>
-                </div>
-            </form>
-  
-        </section>
 
+    <!-- Body -->
+    <body>
+      <!-- Login Section -->
+      <section id="clientes">
+        <div class="titulo-body">
+          <h2>Ingresa tus datos para sacar tu turno</h2>
+        </div>
+
+        <form action="" id="form">
+          <h3>Registro</h3>
+
+          <div class="grupo">
+            <label for="">Nombre</label>
+            <input type="text" name="" id="name" />
+          </div>
+
+          <div class="grupo">
+            <label for="">Edad</label>
+            <input type="text" name="" id="edad" />
+          </div>
+
+          <div class="grupo">
+            <label for="">Email</label>
+            <input type="text" name="" id="email" />
+          </div>
+
+          <div class="btn-login">
+            <button id="signIn" type="button" onclick="login()">
+              Pedir Turno
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- About us - Porque Elegirnos -->
       <section id="caracteristicas">
         <div class="titulo-body">
           <h2>¿Porque Elegirnos?</h2>
         </div>
 
         <div class="boxes">
-            <h2 class="title-boxes">Barberos Experimentados</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rem ea accusamus est dolorum, minima vel aliquid pariatur quibusdam, excepturi sunt doloribus provident voluptates ipsam unde quas officia, alias sed?</p>
-            <h2 class="title-boxes">Turnos Online</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vitae in quas iusto adipisci facilis, laudantium ullam, deleniti dolores enim dolor voluptatem officiis repellat a inventore ducimus itaque expedita molestiae.</p>
-            <h2 class="title-boxes">Bajos Costos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum consectetur adipisci eos nobis ad eligendi eum officiis veritatis? Molestiae fuga ullam labore, nihil quam dignissimos distinctio perferendis tenetur accusantium?</p>
+          <h2 class="title-boxes">Barberos Experimentados</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            rem ea accusamus est dolorum, minima vel aliquid pariatur quibusdam,
+            excepturi sunt doloribus provident voluptates ipsam unde quas
+            officia, alias sed?
+          </p>
+          <h2 class="title-boxes">Turnos Online</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            vitae in quas iusto adipisci facilis, laudantium ullam, deleniti
+            dolores enim dolor voluptatem officiis repellat a inventore ducimus
+            itaque expedita molestiae.
+          </p>
+          <h2 class="title-boxes">Bajos Costos</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            laborum consectetur adipisci eos nobis ad eligendi eum officiis
+            veritatis? Molestiae fuga ullam labore, nihil quam dignissimos
+            distinctio perferendis tenetur accusantium?
+          </p>
         </div>
       </section>
 
+      <!-- Servicios - GRID fotos -->
       <section id="Servicios">
         <div class="titulo-body">
           <h2>Servicios</h2>
           <h3>Proveemos lo mejor</h3>
         </div>
+
+        <!-- GRID - Articulos -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="grid-item">
+                <a href="./Pages/mujer.html #borcegos">
+                  <img
+                    src="https://i.ibb.co/0ZC3BGd/handsome-young-bearded-guy-sitting-in-an-armchair-in-a-beauty-salon-and-the-girl-near-him-cuts-his-h.jpg"
+                    alt="Foto"
+                  />
+                  <div class="img-title">Borcego</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="grid-item">
+                <a href="./Pages/mujer.html #botas ">
+                  <img
+                    src="https://i.ibb.co/fHjdZ3h/Man-with-a-beard-Hairdresser-with-a-client-Brunette-in-a-barbershop.jpg"
+                    alt="Foto"
+                  />
+                  <div class="img-title">Bota</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="grid-item">
+                <a href="./Pages/mujer.html #sandalias">
+                  <img src="https://i.ibb.co/vmVyNfJ/pic-3.jpg" alt="Foto" />
+                  <div class="img-title">Sandalia</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="grid-item">
+                <a href="./Pages/hombre.html #zapatos">
+                  <img src="https://i.ibb.co/P4fkDzD/pic-4.jpg" alt="Foto" />
+                  <div class="img-title">Zapato</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-    <!-- <button onclick="solicitarInformacion()">Solicitar Turno</button> -->
-    <!--     <p id="informacion">Siguiente Turno:</p>-->
+      <!-- <button onclick="solicitarInformacion()">Solicitar Turno</button> -->
+      <!--     <p id="informacion">Siguiente Turno:</p>-->
 
+      <!-- JS Link -->
       <script src="./js/main.js"></script>
     </body>
 
+    <!-- Footer -->
     <footer>
-        <section id="footer">
-            <div class="titulo-body">
-                <h2>Contacto</h2>
-                <h3>Visita nuestra tienda hoy mismo</h3>
-            </div>
-        </section>
+      <section id="footer">
+        <div class="titulo-body">
+          <h2>Contacto</h2>
+          <h3>Visita nuestra tienda hoy mismo</h3>
+        </div>
+      </section>
     </footer>
   </html>
 </html>
